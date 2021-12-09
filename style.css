@@ -1,0 +1,218 @@
+/* Navbar */
+nav.bg-primary {
+    background-color: transparent !important;
+    transition: all .6s ease;
+}
+nav.bg-primary.scrolled {
+    background-color: #1266F1 !important;
+}
+
+/* Jumbotron */
+header.jumbotron .bg-image {
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    background-position: 45% 60%;
+}
+
+header.jumbotron .bg-image.design {
+    background-image: url("img/1.jpg");
+}
+
+header.jumbotron .bg-image.networking {
+    background-image: url("img/2.jpg");
+}
+
+header.jumbotron .bg-image.install-config {
+    background-image: url("img/3.jpg");
+}
+
+header.jumbotron .bg-image.maintenance {
+    background-image: url("img/4.jpg");
+}
+
+header.jumbotron .bg-image.outsourcing {
+    background-image: url("img/5.jpg");
+}
+
+header.jumbotron .bg-image.seat-manage {
+    background-image: url("img/6.jpg");
+}
+
+header.jumbotron .bg-image.fur-byReq {
+    background-image: url("img/7.jpg");
+}
+
+header.jumbotron .bg-image.consul-construct {
+    background-image: url("img/8.jpg");
+}
+
+header.jumbotron .bg-image.fur-office {
+    background-image: url("img/9.jpg");
+}
+
+header.jumbotron .bg-image::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,0));
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header.jumbotron .bg-image .display-5, .tombol, .display-3{
+    position: relative;
+    z-index: 1;
+}
+
+header.jumbotron .bg-image .display-5 {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .7);
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    font-weight: 100;
+}
+
+.mask .text-white h1 span {
+    font-weight: bold;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mouse {
+    width: 25px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 2rem;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+  }
+  
+  .mouse span {
+      width: 7px;
+      height: 7px;
+      background-color: white;
+      display: block;
+      border-radius: 50%;
+      margin: auto;
+      animation: move-wheel 1s linear infinite;
+  }
+  
+  .arrow span {
+      display: block;
+      width: .7rem;
+      height: .7rem;
+      border: 2px solid transparent;
+      border-right-color:white;
+      border-bottom-color:white;
+      transform: rotate(45deg);
+      animation: arrow-down .5s alternate infinite;
+  }
+  
+  @keyframes move-wheel {
+    0% {
+      opacity: 0;
+      transform: translateY(-.9rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(.7rem);
+    }
+  }
+  
+  @keyframes arrow-down {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: .25;
+    }
+    50% {
+      opacity: .5;
+    }
+    75% {
+      opacity: .75;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* Services */
+section .services .container.business {
+  margin-top: 10vh !important;
+  margin-bottom: 7.5vh !important;
+}
+
+/* Contact */
+section .contact-home, .contact {
+  margin-top: 5rem !important;
+}
+
+.btn-kirim {
+    width: 100%;
+}
+
+/* Tombol */
+.tombol:active {
+    background-color: #1266F1;
+    border-color: #1266F1;
+    color: #fff;
+}
+
+/* Scroll Top */
+.scrollTop {
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+}
+
+.scrollTop-active {
+    opacity: 1;
+    pointer-events: auto;
+    bottom:40px;
+}
+
+@media (min-width: 768px) {
+    ul.navbar-nav li a {
+        font-size: 16px;
+    }
+
+   section.contact-home {
+       min-height: 100vh; 
+   }
+
+   section.contact, .contact-home .card-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 150;
+  }
+
+   .btn-kirim {
+       width: 9rem;
+   }
+
+   .tombol:hover {
+    background-color: #1266F1;
+    border-color: #1266F1;
+    color: #fff;
+}
+}
